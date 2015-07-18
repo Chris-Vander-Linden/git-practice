@@ -1,0 +1,19 @@
+body{
+	background-color: silver;
+}
+
+#container{
+	max-width: 700px;
+	margin: 10px auto 10px auto;
+	padding: 15px;
+	background-color: white;
+	border: 1px solid gray;
+}
+
+h1{
+	text-align: center;
+}
+
+img{
+	width: 100%;
+}
