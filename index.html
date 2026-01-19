@@ -7,8 +7,7 @@
 
     <style>
       :root {
-        --bg: #ffffff;
-        --fg: #000000;
+        --bg: --fg: #000000;
         --muted: #292929;
         --accent: #646464;
       }
@@ -19,6 +18,10 @@
         padding: 0;
       }
 
+      html {
+        background-color: rgba(182, 192, 210, 0.5);
+      }
+
       body {
         font-family:
           system-ui,
@@ -27,7 +30,6 @@
           "Segoe UI",
           Roboto,
           sans-serif;
-        background: var(--bg);
         color: var(--fg);
       }
 
@@ -38,22 +40,20 @@
 
       header {
         position: absolute;
-      }
-
-      footer {
-        color: var(--muted);
+        padding-left: 5px;
       }
 
       #main-image-container {
         width: 100%;
         margin: 10px auto;
-        border-radius: 5px;
         position: relative;
       }
 
       #content {
         position: absolute;
-        bottom: 30px;
+        bottom: 0;
+        right: 0;
+        padding: 5px;
       }
 
       img {
@@ -64,33 +64,19 @@
 
   <body>
     <main>
-      <section>
-        <div id="main-image-container">
-          <header>
-            <h1>BBB Rumors</h1>
-            <p>pst...</p>
-          </header>
-          <img
-            src="./image/FE827BD8-22DC-43B3-853B-BD98BDCC83D1_1_105_c.jpeg"
-            alt="snow"
-          />
-          <div id="content">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laudantium dolore nemo eligendi vero! Placeat quas mollitia vero
-              ratione, explicabo sapiente iste possimus impedit veniam quo,
-              nihil quisquam itaque alias non!
-            </p>
-          </div>
+      <div id="main-image-container">
+        <header>
+          <h1>BBB Rumors</h1>
+          <p>pst... pst... pst...</p>
+        </header>
+        <img
+          src="./image/FE827BD8-22DC-43B3-853B-BD98BDCC83D1_1_105_c.jpeg"
+          alt="snow"
+        />
+        <div id="content">
+          <h2>03.20.26</h2>
         </div>
-      </section>
-
-      <footer>
-        <p>
-          Maintained by <strong>Chris</strong> ·
-          <a href="https://github.com/Chris-Vander-Linden">GitHub</a>
-        </p>
-      </footer>
+      </div>
     </main>
   </body>
 </html>
