@@ -15,10 +15,11 @@
 
       * {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
       }
 
       body {
-        margin: 0;
         font-family:
           system-ui,
           -apple-system,
@@ -28,84 +29,66 @@
           sans-serif;
         background: var(--bg);
         color: var(--fg);
-        line-height: 1.6;
       }
 
       main {
         max-width: 720px;
-        padding: 2rem;
         margin: 0 auto;
       }
 
       header {
-        margin-bottom: 2rem;
-        border-bottom: 1px solid #1e293b;
-        padding-bottom: 1rem;
-      }
-
-      h1 {
-        margin: 0;
-        font-size: 2rem;
-      }
-
-      p {
-        color: var(--muted);
-      }
-
-      ul {
-        padding-left: 1.2rem;
-      }
-
-      li {
-        margin: 0.5rem 0;
+        position: absolute;
       }
 
       footer {
-        margin-top: 3rem;
-        font-size: 0.9rem;
         color: var(--muted);
-        border-top: 1px solid #1e293b;
-        padding-top: 1rem;
       }
 
-      a {
-        color: var(--accent);
-        text-decoration: none;
+      #main-image-container {
+        width: 100%;
+        margin: 10px auto;
+        border-radius: 5px;
+        position: relative;
       }
 
-      a:hover {
-        text-decoration: underline;
+      #content {
+        position: absolute;
+        bottom: 30px;
+      }
+
+      img {
+        width: 100%;
       }
     </style>
   </head>
 
   <body>
     <main>
-      <header>
-        <h1>BBB Rumors</h1>
-        <p>pst...</p>
-      </header>
-
       <section>
-        <h2>Rumors</h2>
-        <ul>
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Notes</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt eveniet iste nam. Doloremque, ullam. Magni sunt ab ullam rerum. Quasi autem quo, sed nihil labore animi vitae est in a.
-        </p>
+        <div id="main-image-container">
+          <header>
+            <h1>BBB Rumors</h1>
+            <p>pst...</p>
+          </header>
+          <img
+            src="./image/FE827BD8-22DC-43B3-853B-BD98BDCC83D1_1_105_c.jpeg"
+            alt="snow"
+          />
+          <div id="content">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium dolore nemo eligendi vero! Placeat quas mollitia vero
+              ratione, explicabo sapiente iste possimus impedit veniam quo,
+              nihil quisquam itaque alias non!
+            </p>
+          </div>
+        </div>
       </section>
 
       <footer>
         <p>
           Maintained by <strong>Chris</strong> ·
-          <a href="#">GitHub</a>
+          <a href="https://github.com/Chris-Vander-Linden">GitHub</a>
         </p>
       </footer>
     </main>
