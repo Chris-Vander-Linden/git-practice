@@ -41,19 +41,36 @@
       header {
         position: absolute;
         padding-left: 5px;
+        color: #fff;
+        text-shadow:
+          -2px -2px 0 #000,
+          2px -2px 0 #000,
+          -2px 2px 0 #000,
+          2px 2px 0 #000,
+          -2px 0px 0 #000,
+          2px 0px 0 #000,
+          0px -2px 0 #000,
+          0px 2px 0 #000;
+      }
+      header h1 {
+        font-size: 100px;
+      }
+
+      header p {
+        font-size: 30px;
       }
 
       #main-image-container {
         width: 100%;
         margin: 10px auto;
         position: relative;
+        border: 2px solid rgb(54, 54, 54);
+        border-radius: 2px;
       }
 
-      #content {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        padding: 5px;
+      #date {
+        display: flex;
+        flex-direction: row-reverse;
       }
 
       img {
@@ -61,7 +78,19 @@
       }
 
       ol {
-        padding-left: 15px;
+        list-style-type: none;
+      }
+
+      li {
+        border: 1px solid rgb(54, 54, 54);
+        background-color: rgb(255, 255, 255);
+        margin-top: 5px;
+        padding: 5px;
+      }
+
+      #sponsors {
+        display: flex;
+        justify-content: space-evenly;
       }
     </style>
   </head>
@@ -77,16 +106,36 @@
           src="./image/FE827BD8-22DC-43B3-853B-BD98BDCC83D1_1_105_c.jpeg"
           alt="snow"
         />
-        <div id="content">
-          <h2>03.20.26</h2>
+        <div>
+          <div id="sponsors">
+            <div>sponsor</div>
+            <div>sponsor</div>
+            <div>sponsor</div>
+            <div>sponsor</div>
+          </div>
+          <div id="date">
+            <h2>03.20.26</h2>
+          </div>
         </div>
       </div>
       <section>
         <h2>Rumors...</h2>
         <ol>
           <li>
-            2026 is the first year there will be a Special BBB for racers with
-            disabilities of their choice. Pick any disability. There are a lot!
+            <h3>BBB in search for new title race sponsor?</h3>
+            <p>
+              Rumors of reports of rumors are claiming that race sponsors are
+              backing out and fleeing due to the recent comments made by the
+              race director. It's unclear the origin or content of the comments
+              but sponsors seem to be unwilling to take the risk. It'll be
+              interesting for sure!
+            </p>
+          </li>
+          <li>
+            <h3>A 'Special BBB' may be on the way.</h3>
+            It is being said that 2026 maybe the first year there will be a
+            Special BBB for racers with disabilities of their choice. Pick any
+            disability. There are a lot!
           </li>
         </ol>
       </section>
