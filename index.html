@@ -53,11 +53,11 @@
           0px 2px 0 #000;
       }
       header h1 {
-        font-size: 100px;
+        font-size: 7vw;
       }
 
       header p {
-        font-size: 30px;
+        font-size: 3vw;
       }
 
       #main-image-container {
@@ -68,9 +68,18 @@
         border-radius: 2px;
       }
 
+      @media (max-width: 720px) {
+        #main-image-container {
+          margin: 0;
+        }
+      }
+
       #date {
         display: flex;
         flex-direction: row-reverse;
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
       }
 
       img {
@@ -91,6 +100,8 @@
       #sponsors {
         display: flex;
         justify-content: space-evenly;
+        position: absolute;
+        bottom: 0;
       }
     </style>
   </head>
@@ -108,10 +119,30 @@
         />
         <div>
           <div id="sponsors">
-            <div>sponsor</div>
-            <div>sponsor</div>
-            <div>sponsor</div>
-            <div>sponsor</div>
+            <div>
+              <img
+                src="./image/sponsors/tylenol-logo-png_seeklogo-143756.png"
+                alt="tylenol"
+              />
+            </div>
+            <div>
+              <img
+                src="./image/sponsors/tylenol-logo-png_seeklogo-143756.png"
+                alt="tylenol"
+              />
+            </div>
+            <div>
+              <img
+                src="./image/sponsors/tylenol-logo-png_seeklogo-143756.png"
+                alt="tylenol"
+              />
+            </div>
+            <div>
+              <img
+                src="./image/sponsors/tylenol-logo-png_seeklogo-143756.png"
+                alt="tylenol"
+              />
+            </div>
           </div>
           <div id="date">
             <h2>03.20.26</h2>
@@ -121,6 +152,24 @@
       <section>
         <h2>Rumors...</h2>
         <ol>
+          <li>
+            <h3>Priceless awards from local park artist Tilly</h3>
+            <p>
+              If you were looking for motivation to do the BBB, you got it! They
+              call her the <a href="https://www.banksy.co.uk/">Banskey</a> of
+              the west and she is providing the awards. They say art is
+              priceless but that's not entirely true. BBBlink 182's band guy
+              sold some art for
+              <a
+                href="https://www.cbsnews.com/news/painting-auction-banksy-art-for-sale-blink-182/"
+                >5.5 million</a
+              >
+              frog skins! So, if you're behind of on your 401k contributions,
+              think about doing the BBB. It might just be the best investment of
+              your life!
+            </p>
+            <img src="image/IMG_1664.jpeg" alt="Tilly art" />
+          </li>
           <li>
             <h3>JamJam throws his hat into the BBB</h3>
             <p>Wow! <a href="https://www.jamilcoury.com/about-2/">JamJam</a></p>
@@ -146,6 +195,7 @@
             disability. There are a lot!
           </li>
         </ol>
+        THE END?
       </section>
     </main>
   </body>
